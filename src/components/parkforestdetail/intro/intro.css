@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Combo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Stardos+Stencil&display=swap");
+.i {
+    display: flex;
+    height: 90vh;
+    background-color: #c9bda42a;
+    justify-content: flex-start;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+}
+
+.i-left {
+    flex: 1;
+    display: flex;
+}
+
+.i-right {
+    flex: 1;
+    position: relative;
+}
+
+.i-left-wrapper {
+    padding: 50px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.i-intro {
+    font-size: 25px;
+    font-weight: 400;
+    color: #446457;
+    justify-content: center;
+    display: flex;
+    font-family: "Stardos Stencil";
+}
+
+.i-name {
+    font-size: 40px;
+}
+
+.i-title {
+    padding: 2rem;
+    margin: 3.5rem;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.582);
+}
+
+.i-title-wrapper {
+    height: 100%;
+    animation: move 4s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+    25% {
+        transform: translateY(-50px);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+    75% {
+        transform: translateY(-150px);
+    }
+    100% {
+        transform: translateY(-200px);
+    }
+}
+
+.i-title-item {
+    height: 45px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #c9bda4;
+    display: flex;
+    justify-content: center;
+    font-family: "Combo";
+}
+
+.i-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.i-bg {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 480px) {
+    .i {
+        flex-direction: column;
+    }
+    .i-left-wrapper {
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+    }
+}

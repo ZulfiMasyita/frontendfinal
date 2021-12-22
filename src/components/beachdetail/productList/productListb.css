@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Combo&display=swap");
+.plb {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.plb-texts {
+    width: 65%;
+}
+
+.plb-title {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.plb-desc {
+    margin: 20px 0px;
+    font-family: "Combo";
+}
+
+.plb-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #dd9eb6, #dd9eb662 60%);
+    border-radius: 10px;
+    box-shadow: -1px 1px 8px rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 480px) {
+    .plb {
+        padding: 10px;
+    }
+    .plb-texts {
+        width: 100%;
+    }
+    .plb-desc {
+        display: none;
+    }
+}
